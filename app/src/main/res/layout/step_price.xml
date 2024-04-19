@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/priceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nastavte si cenu za miesto"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Zadajte cenu"
+        android:drawableEnd="@drawable/ic_euro"
+        android:drawablePadding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColor="@color/purple_200"
+        android:layout_below="@+id/priceTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="180dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/poznamka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumu zadávajte v eurách"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+        android:layout_below="@+id/editTextPrice"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadiebielofialova"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/userGuideTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Používateľská príručka"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/userGuideSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Tu zistíte ako správne používať túto aplikáciu pre zdieľanie jázd"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userGuideTitle" />
+
+    <ScrollView
+        android:id="@+id/scrollViewUserGuide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/userGuideSubTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/vyberrole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Výber role: Používateľ má na výber z dvoch rolí: vodič alebo pasažier. Vodič má možnosť vytvárať, vyhľadávať a pripájať sa na jazdy a pasažier môže len vyhľadávať a pripájať sa na jazdy. POZOR na to, že výber role sa už viac nebude dať meniť, takže treba si rozmyslieť svoj výber."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/vytvorprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Požívateľský profil: Po vybratí role sa používateľovi zobrazí formulár pre zadanie údajov. Vodič bude musieť zadať: meno, priezvisko, dátum narodenia, vozidlo, evidenčné číslo a poznámku. Pasažier bude musieť zadať: meno, priezvisko, dátum narodenia a poznámku. Následne tieto údaje potvrdí tlačidlom. V budúcnosti sa tieto údaje dajú upraviť."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/vytvorjazdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vytvorenie jazdy: Jadzu môže vytvárať iba používateľ s priradenou rolou vodiča. Jazda sa vytvára nasledovne - vodič postupne zadá všetky informácie o jazde: začiatočná, koncová adresa, dátum, čas, počet voľných miest a cenu jazdy. V sumáre skontroluje údaje o jazde a potvrdí vytvorenie."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/hladajjazdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vyhľadávanie jazdy: Používateľ s akoukoľvek rolou vie vyhľadávať spomedzi všetkých vytvorených jázd a následne sa na niektorú z nich pripojiť. Vyhľadávať môže pomocou troch parametrov a to: začiatočná, koncová adresa a dátum. Po zadaní jedného z parametrov klikne na tlačidlo hľadať. Ak sa nájdu dostupné jazdy, vyberie si jednu z jázd a klikne na pripojiť sa na jazdu. Ak sa žiadna jazda nenájde ponúkne sa mu možnosť presmerovania na cestovné poriadky verejnej dopravy. "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/pripojjazdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pripojenie sa na jazdu: Po kliknutí na pripojenie sa na jazdu sa používateľovi zobrazia informácie o vodičovi, ktorý danú jazdu vytvoril. Zobrazí sa mu: používateľské meno, email a telefónne číslo, kde na telefónne číslo a na email sa dá kliknúť a následne aplikácia používateľa presmeruje na zvolenú možnosť, cez ktorú môže vodiča kontaktovať."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/mojejazdy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moje jazdy: Táto sekcia je rozdelená na dve časti. Prvá zobrazuje jazdy vytvorené práve prihláseným používateľom, kde sa mu zobrazia všetky informácie o vytvorenej jazde vrátane informácií o používateľoch, ktorí sú na danú jazdu pripojený. Tieto informácie zahŕňajú používateľské meno, email a telefónne číslo. V druhej časti sa nachádzajú jazdy, na ktoré je používateľ pripojený. O každej jazde sú tu dostupné všetky informácie, ktoré vodič zadáva pri jej vytváraní a taktiež sú dostupné aj informácie o vodičovi, ktorý danú jazdu vytvoril a to znova vo forme používateľského mena, emailu a telefónneho čísla. Aj v prvej aj v druhej časti sa na všetky telefónne čísla a emaily dá kliknúť a aplikácia vás naśledne presmeruje na externú kontaktnú aplikáciu. "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/odstarjazdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odstránenie jazdy: Vodič, ktorý danú jazdu vytvoril ju vie odstrániť v serkcií moje jazdy, konkrétne v časti moje zdieľané jazdy. Pred jej odstránením by bolo ešte vhodné kontaktovať používateľov, ktorí sú na danú jazdu pripojený, ak teda nejakí sú. "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/odpojjazdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odpojenie sa z jazdy: Používateľ sa vie odpojiť z jazdy a to v sekcií moje jazdy v časti zdieľané jazdy, na ktoré som pripojený. Pred odpojením sa z jazdy by bolo taktiež vhodné kontaktovať vodiča, ktorý vytvoril danú jazdu. "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

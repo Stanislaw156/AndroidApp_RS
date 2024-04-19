@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadiebielofialova"
+    tools:context=".Controlers.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/uvodnytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_horizontal"
+            android:text="Vitajte v RS, kde jednoducho každý nájde svoju zdieľanú jazdu"
+            android:fontFamily="@font/uber_move_bold"
+            android:textColor="@color/purple_500"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="30dp"/>
+
+        <Button
+            android:id="@+id/offerRideButton"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Ponúkam zdieľanú jazdu"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"
+            app:backgroundTint="@color/purple_500"
+            app:cornerRadius="28dp"
+            app:elevation="6dp"
+            android:paddingVertical="16dp"
+            app:icon="@drawable/ic_drive_eta"
+            app:iconTint="@android:color/white"
+            app:iconPadding="10dp" />
+
+        <Button
+            android:id="@+id/searchRideButton"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hľadám zdieľanú jazdu"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"
+            app:backgroundTint="@color/purple_500"
+            app:cornerRadius="28dp"
+            app:elevation="6dp"
+            android:paddingVertical="16dp"
+            app:icon="@drawable/ic_search"
+            app:iconTint="@android:color/white"
+            app:iconPadding="10dp" />
+    </LinearLayout>
+</FrameLayout>

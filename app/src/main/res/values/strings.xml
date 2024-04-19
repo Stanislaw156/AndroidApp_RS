@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">RS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">navigation_drawer_open</string>
+    <string name="drawer_close">navigation_drawer_close</string>
+
+
+    <string name="register_text">Let\'s start with creating your account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="continue_text">Continue</string>
+    <string name="title_activity_driver_home">DriverHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subsubtitle">+421944444444</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_name">Meno</string>
+    <string name="last_name">Priezvisko</string>
+    <string name="birth_date">Dátum narodenia</string>
+    <string name="vehicle">Vozidlo</string>
+    <string name="registration_number">Evidenčné číslo</string>
+    <string name="note">Poznámka</string>
+    <string name="submit">Potvrdiť</string>
+    <string name="edit">Upraviť</string>
+    <string-array name="user_types">
+        <item>Driver</item>
+        <item>Passenger</item>
+    </string-array>
+
+    <string name="start_point">Začiatočná adresa</string>
+    <string name="end_point">Koncová adresa</string>
+    <string name="date">Dátum</string>
+    <string name="time">Čas</string>
+    <string name="seats">Počet sedadiel</string>
+    <string name="price">Cena</string>
+    <string name="search_ride">HĽADAŤ JAZDU</string>
+
+</resources>

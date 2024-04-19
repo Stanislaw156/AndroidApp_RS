@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlers.SearchRideFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_startPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/start_point"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/editText_endPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/end_point"
+            app:layout_constraintTop_toBottomOf="@id/editText_startPoint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/editText_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@id/editText_endPoint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutForButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/editText_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/button_searchRide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/search_ride"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="12dp"
+                />
+
+            <Button
+                android:id="@+id/button_redirect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PRESMEROVAŤ NA CP"
+                android:fontFamily="sans-serif-medium"
+                android:visibility="visible"
+                android:layout_marginEnd="12dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ridesRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutForButtons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:nestedScrollingEnabled="false"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

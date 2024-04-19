@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pozadiebielofialova"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".Controlers.RegisterActivity">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:transitionName="logo_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Vitajte,"
+            android:textColor="@color/purple_700"
+            android:textSize="40sp"
+            android:transitionName="logo_text"
+            android:layout_marginTop="-20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Zaregistujte sa a zažite svoju novú zdieľanú jazdu"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:transitionName="logo_desc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Používateľské meno"
+                android:id="@+id/reg_username"
+                android:singleLine="true"
+                android:inputType="text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/reg_email"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Heslo"
+                android:id="@+id/reg_password"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/reg_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefónne číslo"
+                android:inputType="phone"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Zaregistrovať sa"
+            android:textSize="18dp"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="Máte už vytvorený účet? PRIHLÁSTE SA"
+            android:textColor="@color/purple_700" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="Domov"
+            android:id="@+id/action_home"
+            android:icon="@drawable/ic_home_24"
+            />
+        <item
+            android:title="Používateľský profil"
+            android:id="@+id/action_profile"
+            android:icon="@drawable/ic_account_circle_24"
+            />
+        <item
+            android:title="Moje jazdy"
+            android:id="@+id/action_my_rides"
+            android:icon="@drawable/ic_directions_car_black"
+            />
+        <item
+            android:title="Použivateľská príručka"
+            android:id="@+id/action_prirucka"
+            android:icon="@drawable/ic_menu_book_24"
+            />
+        <item
+            android:title="Odhlásiť sa"
+            android:id="@+id/action_logout"
+            android:icon="@drawable/ic_logout_24"
+            />
+    </group>
+</menu>

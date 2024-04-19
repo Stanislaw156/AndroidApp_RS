@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Tienový efekt -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1F000000"/> <!-- Svetlý sivý tieň -->
+            <corners android:radius="8dp"/> <!-- Zaoblenie rohov -->
+        </shape>
+    </item>
+
+    <!-- Pozadie nad tienom s menším rozmerom pre efekt elevácie -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/> <!-- Biela farba pozadia -->
+            <corners android:radius="8dp"/> <!-- Zaoblenie rohov -->
+        </shape>
+    </item>
+</layer-list>

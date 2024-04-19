@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/zhrnutie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Zhrnutie Vašej jazdy:"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/summaryStartPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Začiatočná adresa:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editSummaryStartPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/summaryEndPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koncová adresa:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editSummaryEndPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/summaryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dátum:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editSummaryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/summaryTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Čas:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editTextSummaryTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/summarySeatCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Počet voľných miest:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editTextSummarySeatCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/summaryPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cena:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/editTextSummaryPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
